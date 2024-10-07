@@ -33,13 +33,28 @@ else:
     elif num != 10 and num % 10 == 0: 
         print(int_dictionary[str_num[0]]," mươi")
     else: 
-        if str_num[1] == "5": 
+        if str_num[0] == "1": 
+            if str_num[1] == 5: 
+                print("mười lăm")
+            else: 
+                print("mười", int_dictionary[str_num[1]])
+
+        elif str_num[1] == "5": 
             print(int_dictionary[str_num[0]]," mươi lăm")
         elif str_num[1] == "4": 
             print(int_dictionary[str_num[0]]," mươi tư")
         elif str_num[1] == "1":
             print(int_dictionary[str_num[0]], " mươi mốt")
-        elif str_num[0] == "1": 
-            print("mười", int_dictionary[str_num[1]])
         else:
             print(int_dictionary[str_num[0]], " mươi ",int_dictionary[str_num[1]])
+        # match(str_num[1]):
+        #     case "1": 
+        #         print(int_dictionary[str_num[0]], " mươi mốt")
+        #     case "4": 
+        #         print(int_dictionary[str_num[0]]," mươi tư")
+        #     case "5":
+        #         print(int_dictionary[str_num[0]]," mươi lăm")
+        # if str_num[0] == "1": 
+        #         print("mười", int_dictionary[str_num[1]])
+        # else: 
+        #     print(int_dictionary[str_num[0]], " mươi ",int_dictionary[str_num[1]])
