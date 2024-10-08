@@ -6,10 +6,11 @@ def input_x():
     while not flag:
         try:
             x = float(input("Enter x:"))
-            if x > 0:
-                flag = True
-            else:
-                print("You need to enter x has positive value !!!")
+            # if x > 0:
+            #     flag = True
+            # else:
+            #     print("You need to enter x has positive value !!!")
+            flag = True if x > 0 else False 
         except ValueError:
             print("Invalid number !!! Try again")
     return x
@@ -18,10 +19,11 @@ def input_a():
     while not flag:
         try:
             a=float(input("Enter a: "))
-            if a > 0 and a != 1:
-                flag = True
-            else:
-                print("You need to enter a has position value and not equal 1 !!!")
+            # if a > 0 and a != 1:
+            #     flag = True
+            # else:
+            #     print("You need to enter a has position value and not equal 1 !!!")
+            flag = True if a > 0 and a != 1 else False 
         except ValueError:
             print("Invalid number !!! Try again")
     return a
