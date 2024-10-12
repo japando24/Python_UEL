@@ -103,5 +103,5 @@ if __name__ == "__main__":
                 op.division()
             case 5: 
                 answer = input("Do you want to continue (Y/y or N/n)?")
-                if answer == "N" or answer == "n":
+                if answer == "Y" or answer == "y":
                     flag = True 
