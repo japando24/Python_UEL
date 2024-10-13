@@ -30,4 +30,7 @@ match(operator):
     case "*":
         print(f"{a} {operator} {b} = {a*b}")
     case "/": 
-        print(f"{a} {operator} {b} = {a/b}")
+        try: 
+            print(f"{a} {operator} {b} = {a/b}")
+        except ZeroDivisionError:
+            print("b has value 0, so we mustn't execute the division") 
