@@ -52,8 +52,8 @@ def risk_disease(bmi):
             return "Rất cao"
         case _: 
             return "Nguy hiểm"
-height = input_number("height (m): ")
-weight = input_number("weight (kg): ")
+height = input_number("height (m) ")
+weight = input_number("weight (kg) ")
 bmi = BMI(height, weight)
 print("Your BMI: ", bmi)
 print("Your classification: ", classification(bmi))
