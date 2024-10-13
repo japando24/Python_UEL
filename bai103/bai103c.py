@@ -8,7 +8,7 @@ def generate_pascals_triangle(n):
         triangle.append(row)
     return triangle
 def print_triangle(h): 
-    triangle = generate_pascals_triangle(5)[::-1]
+    triangle = generate_pascals_triangle(h)[::-1]
     for i in range(1, 2*h):
         if i <= h: 
             j = 0       
