@@ -51,6 +51,6 @@ def spend_elec(group_customer, num_elec):
     elif group_customer == "2":
         return num_elec*2.271 
     else:
-        print("Invalid value, group_customer must have value 1 or ")
+        print("Invalid value, group_customer must have value 1 or 2")
 result = spend_elec(group_customer, num_elec)
 print("Result: ",result)
