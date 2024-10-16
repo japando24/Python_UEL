@@ -9,4 +9,4 @@ else:
         j = i 
     else: 
         i = k 
-print("i =", i, "j =", "k =", k)
+print("i =", i, "j =",j,"k =", k)
