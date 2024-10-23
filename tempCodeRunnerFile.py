@@ -1,2 +1,2 @@
 
-            print("Please enter again !!! Invalid value")
+                print("* ", end="")
