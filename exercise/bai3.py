@@ -24,14 +24,19 @@ def isPerpectNumber(n):
     else:
         return False
 
-x = input_number("x")
-y = input_number("y")
+while True:
+    x = input_number("x")
+    y = input_number("y")
 
-if x <= y: 
-    result = 0
-    for i in range(x, y + 1):
-        if isPerpectNumber(i):
-            result += i
-    print("Sum of perpect in range [x,y]: ", result)
-else: 
-    print("You need enter x is smaller than y")
+    if x <= y: 
+        result = 0
+        for i in range(x, y + 1):
+            if isPerpectNumber(i):
+                result += i
+        print("Sum of perpect in range [x,y]: ", result)
+        print("Do you want to continue ? ")
+        answer = input("Input your answer: ")
+        if answer == "Y" or answer == "y": 
+            break
+    else: 
+        print("You need enter x is smaller than y")
